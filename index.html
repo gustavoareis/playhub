@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let Down - Player</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <img class="cover" src="images/okcomputer.jpg" alt="Capa do álbum">
+    </div>
+
+    <button id="play-pause"></button>
+
+    <div class="player">
+
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0" min="0" step="1">
+      <span id="duration">0:00</span>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+
+    </div>
+
+    <audio id="audio" src="sounds/Let Down - Radiohead.mp3"></audio>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
